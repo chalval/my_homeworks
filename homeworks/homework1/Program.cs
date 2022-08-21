@@ -83,3 +83,51 @@ Console.WriteLine();
 */
 
 
+
+
+
+// личные задачки
+
+Console.Clear();
+// Console.SetCursorPosition(4, 10);
+// Console.WriteLine("+");
+
+int x1=10, y1=30, x2=60, y2=1, x3=90, y3=35;
+Console.SetCursorPosition(x1, y1);
+Console.WriteLine("1");
+Console.SetCursorPosition(x2, y2);
+Console.WriteLine("2");
+Console.SetCursorPosition(x3, y3);
+Console.WriteLine("3");
+int t1=0, i=0;
+int x=x1, y=y1;
+
+
+while (i<100000)
+{   t1=new Random().Next(0, 3);
+    if (t1==0)
+    {
+        x=(x+x1)/3;
+        y=(y+y1)/3;
+        Console.SetCursorPosition(x, y);
+        Console.WriteLine("1");
+    }
+    if (t1==1)
+    {
+        x=(x+x2)/3;
+        y=(y+y2)/3;
+        Console.SetCursorPosition(x, y);
+        Console.WriteLine("2");
+    }
+    if (t1==2)
+    {
+        x=(x+x3)/3;
+        y=(y+y3)/3;
+        Console.SetCursorPosition(x, y);
+        Console.WriteLine("3");
+    }
+    //System.Threading.Thread.Sleep(100);
+    i++;
+}
+
+
