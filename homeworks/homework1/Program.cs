@@ -85,7 +85,7 @@ Console.WriteLine();
 
 
 
-
+/*
 // личные задачки
 
 Console.Clear();
@@ -129,5 +129,31 @@ while (i<100000)
     //System.Threading.Thread.Sleep(100);
     i++;
 }
+*/
+
+//int[]ddd=new int[5];
+//Console.WriteLine(ddd[3]);
+
+//double[]fff=new double[8];
+//fff[3]=1.44;
+//Console.WriteLine(fff[3]+1.2);
+/*
+decimal[]fff=new decimal[8];
+fff[3]=1.44444444444444444444444444444444444444444444444444444444444444444444444M;
+decimal c = fff[3]+1.2222222222222222222222222222222222222222222222222222222222222222222M;
+Console.WriteLine(c);
+*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 
