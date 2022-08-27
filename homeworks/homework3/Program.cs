@@ -61,12 +61,18 @@ Console.WriteLine("Distance between two points: "+ distance(x1,y1,z1,x2,y2,z2));
 
 */
 
+//Задача 23 Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 
+/*
 
+void pr(int n)
+{
+    for (int i=1; i<=n; i++) Console.Write(i*i*i+", ");
+}
 
+Console.Write("Input number N: ");
+int num = Convert.ToInt32(Console.ReadLine());
+pr(num);
+Console.WriteLine();
 
-
-
-
-
-
+*/
