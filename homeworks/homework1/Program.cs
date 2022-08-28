@@ -147,6 +147,36 @@ decimal c = fff[3]+1.22222222222222222222222222222222222222222222222222222222222
 Console.WriteLine(c);
 
 
+bool sravn (long n)
+{
+    long size=0;
+    for (long i=1; i<n; i*=10) 
+    {
+        size++;
+        Console.WriteLine("i="+i);
+        if (size>23) break;
+    }    
+    if (n<2) size=1;
+    if(n%10==0 && n!=0) size++;
+    Console.WriteLine("size="+size);
+    long[]num = new long[size];
+    for (long i=0; i<size; i++)
+    {
+        num [i] = n%10;
+        n=n/10;
+        Console.WriteLine($"num [{i}] = {num [i]}");
+    }
+    for (long i=0; i<=size/2; i++)
+    {
+        if (num[i]!=num[size-i-1]) return false;
+    }
+return true;
+}
+
+Console.Write("Please enter a number up to 9 digits: ");
+long number = Convert.ToInt64(Console.ReadLine());
+if (sravn(number)) Console.WriteLine($"Number {number} is a palindrome");
+else Console.WriteLine($"Number {number} is not a palindrome");
 
 
 
