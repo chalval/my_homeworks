@@ -139,7 +139,7 @@ while (i<100000)
 //Console.WriteLine(fff[3]+1.2);
 */
 
-
+/*
 
 decimal[]fff=new decimal[8];
 fff[3]=1.44444444444444444444444444444444444444444444444444444444444444444444444M;
@@ -177,6 +177,36 @@ Console.Write("Please enter a number up to 9 digits: ");
 long number = Convert.ToInt64(Console.ReadLine());
 if (sravn(number)) Console.WriteLine($"Number {number} is a palindrome");
 else Console.WriteLine($"Number {number} is not a palindrome");
+
+*/
+//bool i=false;
+//Console.ReadKey(true);
+//Console.WriteLine(i);
+
+// Generate and display 5 random floating point values from 0 to 1.
+//var rand = new Random();
+
+/*
+Console.WriteLine("Five Doubles.");
+for (int ctr = 0; ctr <= 10000; ctr++)
+{
+    int i=new Random().Next(-20,8);
+    Console.Write(" "+i);
+    Console.Write("|"+rand.Next(1,8));
+    }
+Console.WriteLine();
+*/
+/*
+double x=9;
+double y=10.5;
+double i=Math.Pow(x, y);
+Console.WriteLine(i/3);
+*/
+
+
+
+
+
 
 
 
