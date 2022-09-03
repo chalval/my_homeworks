@@ -220,19 +220,26 @@ for (int i = 0; i < 27; i++)
     Console.WriteLine($"fact({i}) = {fact(i)}");
 }
 */
-
-int [,,] t = new int[5,5,5];
+/*
+double [,,] t = new double[3,2,1];
 
 for (int i = 0; i < t.GetLength(0); i++)
 {
     for (int j = 0; j < t.GetLength(1); j++)
     {
         for (int k = 0; k < t.GetLength(2); k++)
-        {
+        {   
+            //int i=new Random().Next(-20,8);
+            t[i, j, k] = new Random().Next(0,100) + new Random().NextDouble();
             Console.WriteLine($"t[{i}, {j}, {k}] = {t[i, j, k]}");
         }
     }
 }
+
+*/
+
+
+
 
 
 
