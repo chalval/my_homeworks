@@ -203,6 +203,41 @@ double i=Math.Pow(x, y);
 Console.WriteLine(i/3);
 */
 
+// рекурсия факториал эксперимент
+/*
+decimal fact(int n)
+{
+    if (n==0) return 1;
+    //System.Threading.Thread.Sleep(1);
+    //Console.WriteLine($"fact({n-1}) = {fact(n-1)}");
+    //System.Threading.Thread.Sleep(100);
+    //else 
+    return n*fact(n-1);
+}
+
+for (int i = 0; i < 27; i++)
+{
+    Console.WriteLine($"fact({i}) = {fact(i)}");
+}
+*/
+
+int [,,] t = new int[5,5,5];
+
+for (int i = 0; i < t.GetLength(0); i++)
+{
+    for (int j = 0; j < t.GetLength(1); j++)
+    {
+        for (int k = 0; k < t.GetLength(2); k++)
+        {
+            Console.WriteLine($"t[{i}, {j}, {k}] = {t[i, j, k]}");
+        }
+    }
+}
+
+
+
+
+
 
 
 
