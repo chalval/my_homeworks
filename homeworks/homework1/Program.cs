@@ -237,6 +237,217 @@ for (int i = 0; i < t.GetLength(0); i++)
 }
 
 */
+/*
+
+var chars = new[]
+{
+    'j',
+    '\u006A',
+    '\x006A',
+    (char)106,
+    (char)107,
+    //77755555,
+};
+Console.WriteLine(string.Join(" ", chars));  // output: j j j j k
+string v="\u006A";
+int c=107;
+char p=(char)c;
+char t=Convert.ToChar(v);
+Console.WriteLine($"{t}, {p}");
+*/
+
+/*
+string x="\\u";
+Console.WriteLine($"{x}");
+for (int i = 0; i < 32768; i++)
+{
+    //System.Threading.Thread.Sleep(1000);
+    char p=(char)i;  
+    Console.Write($"{p}");
+}
+*/
+
+/*
+
+
+string x="\\u";
+Console.WriteLine($"{x}");
+for (int i = 0; i < 32768; i++)
+{   
+    int t = i;
+    int a0=t%16;
+    t = (t-a0)/16;
+    int a1=t%16;
+    t = (t-a1)/16;
+    int a2=t%16;
+    t = (t-a1)/16;
+    int a3=t%16;
+    t = (t-a1)/16;
+    Console.Write($"a{i} = {a3}, {a2}, {a1}, {a0} *** ");
+    //Console.Write($"a{i} = {a3}, {a2}, {a1}, {a0} *** ");
+
+
+
+    //System.Threading.Thread.Sleep(1000);
+    //char p=(char)i;  
+    //Console.Write($"{p}");
+}
+
+
+*/
+/*
+string x="\\u";
+Console.WriteLine($"{x}");
+Console.WriteLine(x);
+string b0=string.Empty;
+string b1=string.Empty;
+string b2=string.Empty;
+string b3=string.Empty;
+
+
+for (int i = 0; i < 32768; i++)
+{   
+    //string b0=string.Empty;
+    int t = i;
+    int a0=t%16;
+    t = (t-a0)/16;
+    int a1=t%16;
+    t = (t-a1)/16;
+    int a2=t%16;
+    t = (t-a1)/16;
+    int a3=t%16;
+    t = (t-a1)/16;
+    
+    if (a0==0) b0="0";
+    if (a0==1) b0="1";
+    if (a0==2) b0="2";
+    if (a0==3) b0="3";
+    if (a0==4) b0="4";
+    if (a0==5) b0="5";
+    if (a0==6) b0="6";
+    if (a0==7) b0="7";
+    if (a0==8) b0="8";
+    if (a0==9) b0="9";
+    if (a0==10) b0="A";
+    if (a0==11) b0="B";
+    if (a0==12) b0="C";
+    if (a0==13) b0="D";
+    if (a0==14) b0="E";
+    if (a0==15) b0="F";
+
+    if (a1==0) b1="0";
+    if (a1==1) b1="1";
+    if (a1==2) b1="2";
+    if (a1==3) b1="3";
+    if (a1==4) b1="4";
+    if (a1==5) b1="5";
+    if (a1==6) b1="6";
+    if (a1==7) b1="7";
+    if (a1==8) b1="8";
+    if (a1==9) b1="9";
+    if (a1==10) b1="A";
+    if (a1==11) b1="B";
+    if (a1==12) b1="C";
+    if (a1==13) b1="D";
+    if (a1==14) b1="E";
+    if (a1==15) b1="F";
+
+    if (a2==0) b2="0";
+    if (a2==1) b2="1";
+    if (a2==2) b2="2";
+    if (a2==3) b2="3";
+    if (a2==4) b2="4";
+    if (a2==5) b2="5";
+    if (a2==6) b2="6";
+    if (a2==7) b2="7";
+    if (a2==8) b2="8";
+    if (a2==9) b2="9";
+    if (a2==10) b2="A";
+    if (a2==11) b2="B";
+    if (a2==12) b2="C";
+    if (a2==13) b2="D";
+    if (a2==14) b2="E";
+    if (a2==15) b2="F";
+
+    if (a3==0) b3="0";
+    if (a3==1) b3="1";
+    if (a3==2) b3="2";
+    if (a3==3) b3="3";
+    if (a3==4) b3="4";
+    if (a3==5) b3="5";
+    if (a3==6) b3="6";
+    if (a3==7) b3="7";
+    if (a3==8) b3="8";
+    if (a3==9) b3="9";
+    if (a3==10) b3="A";
+    if (a3==11) b3="B";
+    if (a3==12) b3="C";
+    if (a3==13) b3="D";
+    if (a3==14) b3="E";
+    if (a3==15) b3="F";
+
+    //string w = string.Empty;
+    string w = x+b3+b2+b1+b0;
+    //Console.Write(w+",");
+    //w = string.Empty;
+   
+    //int c=i;
+    char p=(char)i;
+    //char p=Convert.ToChar(x+b3+b2+b1+b0); //String[] args
+    Console.Write(p+" ");
+    System.Threading.Thread.Sleep(1);
+}
+    //Console.Write($"a{i} = {a3}, {a2}, {a1}, {a0} *** ");
+    //Console.Write($"a{i} = {a3*4096+a2*256+a1*16+a0} *** ");
+    //Console.Write(Convert.ToString(i, 16));
+    Console.WriteLine();
+*/
+/*
+
+for (int i = 0; i < 65535; i++)
+{
+    if (i%1000==0) Console.WriteLine(i);
+    char p=(char)i;
+    Console.Write(p+" ");
+    //System.Threading.Thread.Sleep(1);
+}
+Console.WriteLine();
+*/
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
