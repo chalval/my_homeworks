@@ -1,5 +1,5 @@
-﻿
-/*
+﻿/*
+
 // Задача 47. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
 
 double [,] CreateRandomArray ()
@@ -26,7 +26,7 @@ void PrintArray(double[,]array)
     {
         for (int j = 0; j <array.GetLength(1); j++)
         {
-            Console.Write(array[i, j]+ "  ");
+            Console.Write(array[i, j].ToString("00.0000000"+ "  "));
         }
         Console.WriteLine();
     }
@@ -35,10 +35,10 @@ void PrintArray(double[,]array)
 
 double[,] arr = CreateRandomArray();
 PrintArray(arr);
-
 */
 
 /*
+
 // Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, 
 // и возвращает значение этого элемента или же указание, что такого элемента нет.
 
@@ -73,7 +73,7 @@ void PrintArray(int[,]array)
     {
         for (int j = 0; j <array.GetLength(1); j++)
         {
-            Console.Write(array[i, j]+ "   ");
+            Console.Write(array[i, j].ToString("0,0"+ "  "));
         }
         Console.WriteLine();
     }
@@ -118,7 +118,7 @@ void PrintArray(int[,]array)
     {
         for (int j = 0; j < n; j++)
         {
-            Console.Write(array[i, j]+ "   ");
+            Console.Write(array[i, j].ToString("0,0"+ "  "));
         }
         Console.WriteLine();
     }
