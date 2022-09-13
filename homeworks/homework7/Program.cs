@@ -85,15 +85,65 @@ PrintArray(arr);
 
 */
 
-
+/*
 
 // Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 
 
+int [,] CreateRandomArray ()
+{
+    Console.Write("Enter the number of rows: ");
+    int m = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Enter number of columns: ");
+    int n = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine();
+    int [,] array = new int [m, n];
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            array[i, j] = new Random().Next(0,100);
+        }
+    }
+    Console.WriteLine();
+    return array;
+}
 
 
+void PrintArray(int[,]array)
+{   
+    int m = array.GetLength(0);
+    int n = array.GetLength(1);
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            Console.Write(array[i, j]+ "   ");
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine();
+    double [] arrayAverage = new double [n];
+    double sum = 0;
+    for (int j = 0; j < n; j++)
+    {
+        for (int i = 0; i < m; i++)
+        {
+            sum += array[i, j];    
+        }
+        arrayAverage[j] = sum / m;
+        sum = 0;
+    }
+    for (int j = 0; j < n; j++)
+        {
+            Console.WriteLine($"arrayAverage[{j}] = {arrayAverage[j]}");
+        }
+    Console.WriteLine();
+}
 
+int[,] arr = CreateRandomArray();
+PrintArray(arr);
 
-
+*/
 
 
