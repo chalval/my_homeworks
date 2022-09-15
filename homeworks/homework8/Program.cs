@@ -182,6 +182,192 @@ PrintArray(arrayC);
 
 */
 
+// Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, 
+// которая будет построчно выводить массив, добавляя индексы каждого элемента.
+
+/*
+
+int [,,] CreateRandomArray (int m, int n, int k )
+{
+    Console.WriteLine();
+    int [,,] array = new int [m, n, k];
+    int schetchik = 10;
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            for (int l = 0; l < k; l++)
+            {
+                array[i, j, l] = schetchik;
+                schetchik++;
+            }
+        }
+    }
+    return array;
+}
+
+
+void PrintArray(int[,,]array, int sloy)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j <array.GetLength(1); j++)
+        {
+            Console.Write(array[i, j, sloy].ToString("0,0"+ "  "));
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine();
+}
+
+
+
+int[,,] arr = CreateRandomArray(6, 5, 3);
+Console.WriteLine("0 layer");
+PrintArray(arr, 0);
+Console.WriteLine("1 layer");
+PrintArray(arr, 1);
+Console.WriteLine("2 layer");
+PrintArray(arr, 2);
+
+
+*/
+
+
+
+// Задача 62. Напишите программу, которая заполнит спирально массив
+
+
+int [,] CreateRandomArray (int m, int n )
+{
+    int num = 1;
+    Console.WriteLine();
+    int [,] array = new int [m, n];
+    for (int i = 0; i < 1; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            array[i, j] = num;
+            num++;
+        }
+    }
+    for (int i = m-1; i < m; i++)
+    {
+        for (int j = 1; j < n; j++)
+        {
+            array[j, i] = num;
+            num++;
+        }
+    }
+    for (int i = m-1; i < m; i++)
+    {
+        for (int j = 0; j < n-1; j++)
+        {
+            array[i, j] = num+n-2;
+            num--;
+        }
+    }
+    for (int i = 1; i < m-1; i++)
+    {
+        for (int j = 0; j < 1; j++)
+        {
+            array[i, j] = num+3*n-5;
+            num--;
+        }
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    System.Threading.Thread.Sleep(100);
+    return array;
+}
+
+
+void PrintArray(int[,]array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j <array.GetLength(1); j++)
+        {
+            Console.Write(array[i, j].ToString("0,0"+ "  "));
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine();
+}
+
+
+System.Threading.Thread.Sleep(100);
+int[,] arr = CreateRandomArray(7,7);
+System.Threading.Thread.Sleep(100);
+PrintArray(arr);
+
+
+
+
+
+
+
+
+
+/*
+
+ 
+int [,] CreateRandomArray (int m, int n )
+{
+    int num = 1;
+    Console.WriteLine();
+    int [,] array = new int [m, n];
+    for (int i = 0; i < 1; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            array[i, j] = num;
+            num++;
+        }
+    }
+    for (int i = m-1; i < m; i++)
+    {
+        for (int j = 1; j < n; j++)
+        {
+            array[j, i] = num;
+            num++;
+        }
+    }
+    for (int i = m-1; i < m; i++)
+    {
+        for (int j = 0; j < n-1; j++)
+        {
+            array[i, j] = num+n-2;
+            num--;
+        }
+    }
+    for (int i = 1; i < m-1; i++)
+    {
+        for (int j = 0; j < 1; j++)
+        {
+            array[i, j] = num+3*n-5;
+            num--;
+        }
+    }
 
 
 
@@ -196,12 +382,4 @@ PrintArray(arrayC);
 
 
 
-
-
-
-
-
-
-
-
-
+*/
