@@ -233,11 +233,11 @@ PrintArray(arr, 2);
 
 */
 
-/*
-
 // Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
 
-int [,] CreateRandomArray (int n )
+/*
+
+int [,] CreateArray (int n )
 {
     int num = 1;
     Console.WriteLine();
@@ -316,7 +316,7 @@ void PrintArray(int[,]array)
 }
 
 
-int[,] arr = CreateRandomArray(4);
+int[,] arr = CreateArray(4);
 PrintArray(arr);
 
 */
