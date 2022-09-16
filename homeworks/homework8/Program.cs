@@ -233,16 +233,15 @@ PrintArray(arr, 2);
 
 */
 
+/*
 
+// Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
 
-// Задача 62. Напишите программу, которая заполнит спирально массив
-
-
-int [,] CreateRandomArray (int m, int n )
+int [,] CreateRandomArray (int n )
 {
     int num = 1;
     Console.WriteLine();
-    int [,] array = new int [m, n];
+    int [,] array = new int [n, n];
     for (int i = 0; i < 1; i++)
     {
         for (int j = 0; j < n; j++)
@@ -251,7 +250,7 @@ int [,] CreateRandomArray (int m, int n )
             num++;
         }
     }
-    for (int i = m-1; i < m; i++)
+    for (int i = n-1; i < n; i++)
     {
         for (int j = 1; j < n; j++)
         {
@@ -259,7 +258,7 @@ int [,] CreateRandomArray (int m, int n )
             num++;
         }
     }
-    for (int i = m-1; i < m; i++)
+    for (int i = n-1; i < n; i++)
     {
         for (int j = 0; j < n-1; j++)
         {
@@ -267,7 +266,7 @@ int [,] CreateRandomArray (int m, int n )
             num--;
         }
     }
-    for (int i = 1; i < m-1; i++)
+    for (int i = 1; i < n-1; i++)
     {
         for (int j = 0; j < 1; j++)
         {
@@ -275,28 +274,30 @@ int [,] CreateRandomArray (int m, int n )
             num--;
         }
     }
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    System.Threading.Thread.Sleep(100);
+    for (int i = 1; i < 2; i++)
+    {
+        for (int j = 1; j < n-1; j++)
+        {
+            array[i, j] = num+10;
+            num++;
+        }
+    } 
+    for (int i = n-2; i < n-1; i++)
+    {
+        for (int j = 1; j < n-1; j++)
+        {
+            array[j, i] = num+9;
+            num++;
+        }
+    }
+    for (int i = n-2; i < n-1; i++)
+    {
+        for (int j = 1; j < n-2; j++)
+        {
+            array[i, j] = num+n+5;
+            num--;
+        }
+    }
     return array;
 }
 
@@ -315,71 +316,7 @@ void PrintArray(int[,]array)
 }
 
 
-System.Threading.Thread.Sleep(100);
-int[,] arr = CreateRandomArray(7,7);
-System.Threading.Thread.Sleep(100);
+int[,] arr = CreateRandomArray(4);
 PrintArray(arr);
-
-
-
-
-
-
-
-
-
-/*
-
- 
-int [,] CreateRandomArray (int m, int n )
-{
-    int num = 1;
-    Console.WriteLine();
-    int [,] array = new int [m, n];
-    for (int i = 0; i < 1; i++)
-    {
-        for (int j = 0; j < n; j++)
-        {
-            array[i, j] = num;
-            num++;
-        }
-    }
-    for (int i = m-1; i < m; i++)
-    {
-        for (int j = 1; j < n; j++)
-        {
-            array[j, i] = num;
-            num++;
-        }
-    }
-    for (int i = m-1; i < m; i++)
-    {
-        for (int j = 0; j < n-1; j++)
-        {
-            array[i, j] = num+n-2;
-            num--;
-        }
-    }
-    for (int i = 1; i < m-1; i++)
-    {
-        for (int j = 0; j < 1; j++)
-        {
-            array[i, j] = num+3*n-5;
-            num--;
-        }
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 */
